@@ -1,0 +1,186 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+  --bg-color-body: #1f1f24;
+  --font-family-inter: 'Inter', sans-serif;
+  --text-color-01: #737380;
+  --text-color-02: #ececec;
+  --text-color-03: rgb(130, 87, 229);
+  --text-color-04: rgb(225, 225, 230);
+  --text-color-05: rgb(32, 32, 36);
+}
+
+body {
+  display: grid;
+  height: 100vh;
+  background: var(--bg-color-body);
+}
+
+body * {
+  font-size: 1.6rem;
+  font-family: var(--font-family-inter)
+}
+
+h1 {
+  color: var(--text-color-02)
+}
+
+#container {
+  margin: 5rem 15rem;
+}
+
+header {
+  color: var(--text-color-01);
+  font-size: 2rem;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  justify-content: end;
+}
+
+ul li a {
+  text-decoration: none;
+  color: var(--text-color-01);
+  align-items: center;
+  transition: color .3s;
+  font-size: 2rem;
+}
+
+ul li a:hover {
+  color: var(--text-color-03);
+}
+
+#aboutMe {
+  margin: 5rem 0 3rem; 
+
+}
+
+#aboutMe h1 {
+  font-size: 4rem;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+#aboutMe span {
+  font-size: 4rem;
+  color: var(--text-color-03);
+}
+
+#section-about-me {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  margin-bottom: 6rem;
+}
+
+#section-about-me img {
+  width: 30rem;
+  height: 30rem;
+  border-radius: 50%;
+  border: 3px solid var(--text-color-03);
+}
+
+#section-about-me p {
+  text-align: justify;
+  font-size: 1.8rem;
+  line-height: 2.7rem;
+  color: var(--text-color-04)
+}  
+
+#technologies h1, #projects h1, #contact h1{
+  text-align: left;
+  font-size: 3rem;
+}
+
+.technologies-languages {
+  display: flex; 
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.technologies-languages #girl-laptop{
+  width: 30rem;
+  height: 30rem;
+  border-radius: 50%;
+  border: 3px solid var(--text-color-03);
+}
+
+#languages {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  column-gap: 8rem;
+  row-gap: 4rem;
+  
+}
+
+#languages img {
+  width: 8rem;
+  height: 8rem;
+}
+
+#projects {
+  margin-top: 6rem;
+}
+
+#projects img {
+  width: 10rem;
+  height: 10rem;
+  border: 3px solid var(--text-color-03);
+  border-radius: 50%;
+}
+
+#github {
+  text-align: center;
+}
+
+#repositories {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem
+}
+
+#repositories button {
+  padding: 2rem;
+  width: 100%;
+  border-radius: 2rem;
+  border: none;
+  color: var(--text-color-02);
+  background: var(--text-color-03);
+  font-size: 2rem;
+  transition: background .3s;
+}
+
+#repositories button:hover {
+  cursor:pointer;
+  background: rgb(110, 37, 229);
+}
+
+#contact {
+  margin-top: 6rem;
+}
+
+#img {
+  display: flex;
+  align-items: center;
+  gap:14rem;
+}
+
+#envelope {
+  width: 30rem;
+  height: 30rem;
+}
+
+#imgContacts img {
+  width: 20rem;
+  height: 5rem;
+}
+
